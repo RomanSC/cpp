@@ -11,15 +11,13 @@ long unsigned int fib(long unsigned int n) {
 }
 
 int main() {
-    int iter;
     for (unsigned int n = 0; n < 100; n++) {
         long unsigned x = fib(n);
-        iter++;
-        if (iter < 10) {
-            printf("%ld  : %u\n", iter, x);
+        if (n < 10) {
+            printf("%ld  : %u\n", n, x);
         }
         else {
-            printf("%ld : %u\n", iter, x);
+            printf("%ld : %u\n", n, x);
         }
     }
 
